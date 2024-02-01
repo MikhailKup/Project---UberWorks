@@ -1,0 +1,80 @@
+// ********* Секция mobile *//
+.mobile {
+	min-height: 864px;
+	background: url(../image/sectionBG.png);
+	&__row {
+		margin-top: 32px;
+		display: grid;
+		grid-template-columns: repeat(3, 320px);
+		grid-template-rows: repeat(2, 300px);
+		gap: 40px;
+		justify-content: center;
+		transition: 0.6s ease;
+	}
+	&__item {
+		position: relative;
+		margin-bottom: 19px;
+		transition: 0.5s ease;
+		&:hover {
+			border: 10px solid #1EACC7;
+			.mobile__title {
+				text-shadow:
+      0 0 7px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+			}
+		}
+		&_1 {
+			background: url(../image/mobile_1.png) center no-repeat;
+			background-color: rgba(0, 0, 0, 0.7);
+			background-blend-mode: darken;
+		}
+		&_2 {
+			background: url(../image/mobile_2.png) center no-repeat;
+			background-color: rgba(0, 0, 0, 0.7);
+			background-blend-mode: darken;
+		}
+		&_3 {
+			background: url(../image/mobile_3.png) center no-repeat;
+			background-color: rgba(0, 0, 0, 0.7);
+			background-blend-mode: darken;
+		}
+		&_4 {
+			background: url(../image/mobile_4.png) center no-repeat;
+			background-color: rgba(0, 0, 0, 0.7);
+			background-blend-mode: darken;
+		}
+		&_5 {
+			background: url(../image/mobile_5.png) center no-repeat;
+			background-color: rgba(0, 0, 0, 0.7);
+			background-blend-mode: darken;
+		}
+		&_6 {
+			background: url(../image/mobile_6.png) center no-repeat;
+			background-color: rgba(0, 0, 0, 0.7);
+			background-blend-mode: darken;
+		}
+	}
+	&__title {
+		padding-top: 92px;
+		text-transform: uppercase;
+		color: #fff;
+		font-size: 24px;
+		text-align: center;
+		transition: 0.6s ease;
+	}
+	&__btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		bottom: 35px;
+		left: 45%;
+		width: 26px;
+		height: 26px;
+		background-color: #000;
+		margin: 0 auto;
+		border-radius: 100%;
+		cursor: pointer;
+	}
+}

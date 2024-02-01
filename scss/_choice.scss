@@ -1,0 +1,25 @@
+// ********* Секция choice *//
+.choice__black {
+	max-height: 500px;
+	background-color: #000;
+	box-sizing: border-box;
+}
+.choice__image {
+	text-align: center;
+	img {
+		display: inline-block;
+		width: 100%;
+		max-width: 759px;
+	}
+}
+.choice__white {
+	height: 398px;
+	background: url(../image/sectionBG.png);
+	&__text {
+		text-align: center;
+		margin: 0 auto;
+		margin-top: 218px;
+		font-size: 17px;
+		color: #222222;
+	}
+}

@@ -1,0 +1,79 @@
+// *** Main Settings *//
+* {
+	font-family: "Roboto" sans-serif;
+}
+$main_color: #1eacc7;
+
+@import "_nullstyle";
+@import "_fonts";
+@import "_mixin";
+@import "_header";
+@import "_promo";
+@import "_features";
+@import "_mobile";
+@import "_choice";
+@import "_terms";
+@import "_world";
+@import "_modal";
+@import "_footer";
+
+// ** Базовое формление секций *//
+section {
+	padding: 70px 0;
+}
+.section__header {
+	margin-bottom: 32px;
+	text-align: center;
+	p {
+		margin-top: 19px;
+		font-size: 17px;
+		color: #222222;
+	}
+	&__light {
+		p {
+			color: #fff;
+		}
+	}
+}
+.section__btn {
+	width: 113px;
+	height: 25px;
+	border: 1px solid #000;
+	background-color: #000;
+	color: #fff;
+	font-size: 11px;
+	&__light {
+		background-color: #fff;
+		color: #000;
+	}
+}
+.section__title {
+	margin-top: 38px;
+	font-size: 38px;
+	font-weight: 700;
+	color: #222222;
+	text-transform: uppercase;
+	&__light {
+		color: #fff;
+	}
+}
+.show {
+	display: block;
+}
+.hide {
+	display: none;
+}
+.fade {
+	animation-name: fade;
+	animation-duration: 1.0s;
+}
+@keyframes fade {   
+	from {     
+	  opacity: 0.1;   
+	}   
+	to {
+	 opacity: 1;
+	}
+ }
+
+@import "_media";

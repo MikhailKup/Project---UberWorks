@@ -1,0 +1,95 @@
+// ********* Секция footer *//
+
+.line {
+	margin: 0 auto;
+	margin-top: 14px;
+	max-width: 299px;
+	height: 4px;
+	background-color: $main_color;
+}
+.footer {
+	margin-top: 30px;
+	padding: 0 23px 30px 23px;
+	border-bottom: 5px solid #000;
+	display: flex;
+	&__left {
+		flex: 0 1 33.33%;
+		display: flex;
+		text-align: left;
+		&__app {
+			text-decoration: none;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 0 4px;
+			width: 32px;
+			height: 32px;
+			background-color: #070716;
+			border-radius: 100%;
+			i {
+				color: #fff;
+			}
+		}
+	}
+	&__center {
+		flex: 0 1 33.33%;
+		text-align: center;
+		a {
+			text-decoration: none;
+		}
+		&__navigation {
+			a {
+				transition: 0.5s ease;
+				color: #070716;
+				font-size: 15px;
+				font-weight: 300;
+				text-transform: uppercase;
+				margin-left: 45px;
+				&:first-child {
+					margin-left: 20px;
+				}
+				&:hover {
+					color: $main_color;
+				}
+			}
+		}
+		&__sections {
+			margin-top: 12px;
+			margin-left: 10px;
+			a {
+				transition: 0.5s ease;
+				margin-left: 24px;
+				font-size: 11px;
+				color: #999999;
+				text-transform: uppercase;
+				&:first-child {
+					margin-left: 0;
+				}
+				&:hover {
+					color: $main_color;
+				}
+			}
+		}
+		&__bottom {
+			display: flex;
+			flex-direction: column;
+		}
+		&__lang {
+			margin: 20px 0 30px 0;
+			display: inline-block;
+			text-transform: uppercase;
+			color: $main_color;
+			font-size: 11px;
+		}
+		&__tel {
+			color: $main_color;
+			font-size: 20px;
+			margin: 20px 0;
+		}
+	}
+	&__right {
+		flex: 0 1 33.33%;
+		display: flex;
+		justify-content: end;
+	}
+}

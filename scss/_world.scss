@@ -1,0 +1,18 @@
+// ********* Секция world *//
+
+.world {
+	height: 717px;
+	width: auto;
+	background: #000 url(../image/worldBG.png) no-repeat;
+	background-size: cover;
+	text-align: center;
+	&__link {
+		display: inline-block;
+		margin-top: 390px;
+		margin-bottom: 49px;
+		text-decoration: none;
+		color: $main_color;
+		font-size: 15px;
+		text-transform: uppercase;
+	}
+}

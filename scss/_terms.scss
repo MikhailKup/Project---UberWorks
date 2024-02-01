@@ -1,0 +1,55 @@
+// ********* Секция terms *//
+
+.terms {
+	padding: 68px 0px 84px 0px;
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		margin-bottom: 50px;
+	}
+	&__block {
+		width: 500px;
+	}
+}
+.block-terms {
+	font-size: 17px;
+	color: #222222;
+	&__header {
+		color: $main_color;
+		font-size: 22px;
+		margin-bottom: 20px;
+		&__red {
+			color: #ff5656;
+		}
+	}
+	&__list {
+		position: relative;
+		list-style: none;
+		position: relative;
+		li {
+			padding-bottom: 15px;
+			padding-left: 22px;
+		}
+		li:before {
+			content: "";
+			display: block;
+			position: absolute;
+			left: 19px;
+			margin-top: -1px;
+			width: 21px;
+			height: 21px;
+			background: url(../icons/blue__icon.png) no-repeat;
+		}
+		&__red {
+			li:before {
+				background: url(../icons/red__icon.png) no-repeat;
+			}
+		}
+	}
+	&__text {
+		margin-top: -10px;
+		margin-left: 18px;
+		color: #1ca8c3;
+	}
+}
